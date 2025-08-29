@@ -11,7 +11,6 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-@Table(name = "account")
 public class Account {
 	
 	public enum AccountStatus {
