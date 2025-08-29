@@ -11,6 +11,6 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
 	List<Transaction> findByAccountUserUserId(int userId);
 	List<Transaction> findByAccountUserUserIdOrderByIdAsc(int userId);
 	
-	@Query(value="Select status from Account where id = ?1", nativeQuery=true)
+	@Query(value="Select status from account where id = ?1", nativeQuery=true)
 	String findStatusByAccountId(Long accountId);
 }
